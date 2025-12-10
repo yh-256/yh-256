@@ -1,86 +1,169 @@
-<!-- README.md (GitHub Profile) -->
+<!-- Ultra-stylish GitHub Profile README -->
 
-<h1 align="center">Hi, I'm Your Name 👋</h1>
-<p align="center">
-Senior Software Engineer / Full-stack / MLOps / Cloud-native
-</p>
+<!-- HERO: Gradient + Glitch + Signature -->
+<div align="center">
 
+  <!-- Gradient Banner with subtle noise & animated shimmer -->
+  <svg width="100%" height="220" viewBox="0 0 1200 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hero">
+    <defs>
+      <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#0f0c29"/>
+        <stop offset="50%" stop-color="#302b63"/>
+        <stop offset="100%" stop-color="#24243e"/>
+      </linearGradient>
+      <filter id="noise">
+        <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="1" stitchTiles="stitch" />
+        <feColorMatrix type="saturate" values="0"/>
+        <feBlend mode="screen"/>
+      </filter>
+      <linearGradient id="shimmer" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="rgba(255,255,255,0)" />
+        <stop offset="50%" stop-color="rgba(255,255,255,0.18)" />
+        <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+      </linearGradient>
+      <clipPath id="rounded">
+        <rect x="0" y="0" width="1200" height="220" rx="22" ry="22"/>
+      </clipPath>
+      <filter id="glitch">
+        <feColorMatrix type="matrix" values="
+          1 0 0 0 0
+          0 1 0 0 0
+          0 0 1 0 0
+          0 0 0 1 0"/>
+      </filter>
+    </defs>
+
+    <rect width="1200" height="220" fill="url(#g)" clip-path="url(#rounded)"/>
+    <rect width="1200" height="220" filter="url(#noise)" clip-path="url(#rounded)" opacity="0.05"/>
+
+    <!-- Shimmer sweep -->
+    <rect width="300" height="220" fill="url(#shimmer)" clip-path="url(#rounded)">
+      <animate attributeName="x" from="-300" to="1200" dur="4s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Signature Title -->
+    <g filter="url(#glitch)">
+      <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle"
+            fill="#e2e8f0" font-size="42" font-weight="700" letter-spacing="1.2">
+        Your Name / Software Engineer
+      </text>
+
+      <!-- subtle glitch layers -->
+      <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle"
+            fill="#7dd3fc" font-size="42" font-weight="700" opacity="0.35">
+        <animate attributeName="dx" values="0;2;0;-1;0" dur="2s" repeatCount="indefinite"/>
+        Your Name / Software Engineer
+      </text>
+      <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle"
+            fill="#fca5a5" font-size="42" font-weight="700" opacity="0.25">
+        <animate attributeName="dx" values="0;-2;0;1;0" dur="2s" repeatCount="indefinite"/>
+        Your Name / Software Engineer
+      </text>
+    </g>
+
+    <!-- tagline -->
+    <text x="50%" y="78%" dominant-baseline="middle" text-anchor="middle"
+          fill="#94a3b8" font-size="18" font-weight="500">
+      Crafting delightful systems · AI / Cloud / DX · Minimal design believer
+    </text>
+  </svg>
+
+</div>
+
+<!-- NAV: quick links (icons via emoji for accessibility) -->
 <p align="center">
-  <a href="https://github.com/yourname?tab=followers">Followers</a> •
-  <a href="https://your-portfolio.example.com">Portfolio</a> •
-  <a href="https://www.linkedin.com/in/yourname">LinkedIn</a> •
-  <a href="https://x.com/yourname">X(Twitter)</a> •
-  <a href="mailto:you@example.com">Contact</a>
+  🚀 <b>Portfolio</b> · 🎓 <b>University</b> · 📝 <b>Blog</b> · 🎤 <b>Talks</b> · ✉️ <b>Contact</b>
 </p>
 
 ---
 
-## About me / 自己紹介
-- 現在: 〇〇社でバックエンドとプラットフォームを担当（Go / TypeScript / Kubernetes）
-- 興味: 分散システム、開発者体験、生成AIプロダクト、SRE
-- 好き: 高速なCI、堅牢なテスト、可観測性、少ない運用コスト
-- 英語・日本語で業務可能 / Remote OK
-
-## Key Highlights / 実績
-- 🚀 プロダクションでのLLM機能をゼロから設計・運用（RAG・評価指標整備・コスト最適化）
-- 📈 月間XX万ユーザーのサービスをモノレポ化しデプロイ時間をYY%短縮
-- 🔒 SOC2準拠のセキュリティ体制で更新作業を自動化
-- 🗣️ 登壇: AWS / GCP / JSConf / 技術系コミュニティ
-
-## Tech Stack / 技術スタック
-<!-- Shields.io badges for quick scanning -->
-<p>
-  <!-- Languages -->
-  <img src="https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white" />
-  <!-- Frameworks -->
-  <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white" />
-  <!-- Cloud / DevOps -->
-  <img src="https://img.shields.io/badge/AWS-232F3E?logo=amazonaws&logoColor=white" />
-  <img src="https://img.shields.io/badge/GCP-4285F4?logo=googlecloud&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white" />
-  <img src="https://img.shields.io/badge/Terraform-7B42BC?logo=terraform&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white" />
-  <!-- Data / AI -->
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vector%20DB-3E5F8A?logo=milvus&logoColor=white" />
-  <img src="https://img.shields.io/badge/LLM-000000?logo=openai&logoColor=white" />
-</p>
-
-## Featured Projects / 代表プロジェクト
-- [Project A] 高速なRAG検索基盤。Go + PostgreSQL + pgvector + OpenAI。QPS向上とレイテンシ最適化。
-- [Project B] Monorepoツールチェーン（Nx + Turbo + Docker Buildx）でCI時間を40%短縮。
-- [Project C] マルチテナントSaaS基盤（OIDC / RBAC / multi-tenant DB / audit log）。
-
-## Open Source / OSS
-- Maintainer: [Repo X]、Contributor: Kubernetes / Helm / etc.
-- 自作CLIやアクションで開発者体験向上
-
-## Activity / 最近の活動（自動更新）
-<!-- この下はGitHub Actionsで毎日更新する -->
-- 最新記事: (自動で差し替え)
-- 最近のスター: (自動で差し替え)
-- 最近の登壇資料: (自動で差し替え)
-
-## Stats
-<p>
-  <img src="https://github-readme-stats.vercel.app/api?username=yourname&show_icons=true&theme=tokyonight" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourname&layout=compact&theme=tokyonight" />
-</p>
-
-## Links
-- Portfolio: https://your-portfolio.example.com
-- Blog: https://blog.example.com
-- Speaker Deck: https://speakerdeck.com/yourname
-- Qiita: https://qiita.com/yourname / Zenn: https://zenn.dev/yourname
+## Highlights
+- **Impact:** 使う人の体験が明確に良くなる技術選択と検証を徹底
+- **Performance:** 設計時からレイテンシ/スループット/コストを三位一体で最適化
+- **Craft:** テスト・CI・可観測性・運用をプロダクトの“機能”として扱う
+- **Curiosity:** 研究→検証→発信のサイクルを常時回す
 
 ---
 
-### 日本語プロフィール（Short ver.）
-SaaS / プラットフォーム開発者。Go/TS/K8sが得意。生成AIのプロダクション導入やSRE基盤整備、モノレポ運用の改善が趣味。登壇・執筆やってます。リモートOK。
+## Featured Work
+<div align="center">
 
+  <!-- Project cards: pure HTML so GitHub renders consistently -->
+  <table>
+    <tr>
+      <td>
+        <b>Project A</b><br/>
+        AI×検索の高精度RAG。低レイテンシを実現する索引戦略とキャッシュ設計。<br/>
+        Stack: Go / TypeScript / Vector Index / Observability
+      </td>
+      <td>
+        <b>Project B</b><br/>
+        Monorepo CIの高速化。依存グラフ活用で不要ビルドを削減、並列最適化。<br/>
+        Stack: Node / Docker / Build system / Caching
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Project C</b><br/>
+        マルチテナントSaaS基盤。認可・監査ログ・テナント分離の原則設計。<br/>
+        Stack: Auth / RBAC / SQL / Infra as Code
+      </td>
+      <td>
+        <b>Project D</b><br/>
+        開発者体験向上CLI。脚注レベルのUX改善で作業時間を短縮。<br/>
+        Stack: CLI / DX / Packaging
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
+## Skills
+- **Languages:** Go / TypeScript / Python / Rust
+- **Frameworks:** React / Next.js / FastAPI
+- **Cloud/DevOps:** Containers / Orchestration / IaC / CI/CD
+- **Data/AI:** SQL / Vector Index / Prompting / Evaluation
+- **Ops:** Testing / Observability / Cost control
+
+---
+
+## Activity
+- 📝 最新記事（自動更新枠）
+- ⭐ 最近スターしたOSS（自動更新枠）
+- 🎤 登壇/スライド（自動更新枠）
+
+<!-- Dynamic blocks (Actionsで置換するマーカー) -->
+<!-- BLOG START -->
+- (auto)
+<!-- BLOG END -->
+
+<!-- STARS START -->
+- (auto)
+<!-- STARS END -->
+
+---
+
+## Thesis / Research
+- **Theme:** 実運用に耐えるLLM×SaaSの設計指針
+- **Focus:** 評価指標・安全性・スケーラビリティ・コスト最適化
+- **Output:** 実験レポート・ベストプラクティス集・講演資料
+
+---
+
+## Contact
+- 学術・インターン・共同研究のお話、歓迎です
+
+<!-- Footer stripe -->
+<div align="center">
+  <svg width="100%" height="16" viewBox="0 0 1200 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <linearGradient id="stripe" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#7dd3fc"/>
+        <stop offset="50%" stop-color="#c084fc"/>
+        <stop offset="100%" stop-color="#fca5a5"/>
+      </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="1200" height="16" fill="url(#stripe)" />
+  </svg>
+</div>
